@@ -35,7 +35,6 @@ def get_version(rel_path):
         raise RuntimeError("Unable to find version string.")
 
 
-
 setup(
     name="napalm-ubiquiti-airos",
     version=get_version("napalm_ubiquiti_airos/__init__.py"),

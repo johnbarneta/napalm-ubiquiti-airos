@@ -48,6 +48,7 @@ class PatchedAirOSDriver(airos.AirOSDriver):
     def open(self):
         pass
 
+
 class FakeAirOSDevice(BaseTestDouble):
     """AirOS device test double."""
 

@@ -1,7 +1,7 @@
 import unittest
 
 from napalm_airos import airos
-from napalm.base.test.base import TestConfigNetworkDriver, TestGettersNetworkDriver # noqa
+from napalm.base.test.base import TestConfigNetworkDriver, TestGettersNetworkDriver  # noqa
 
 
 class TestConfigAirOSDriver(unittest.TestCase, TestConfigNetworkDriver):

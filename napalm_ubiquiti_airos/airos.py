@@ -14,7 +14,6 @@ from napalm.base.exceptions import (
 )
 
 
-
 class AirOSDriver(NetworkDriver):
 
     def __init__(self, hostname, username, password, timeout=60, optional_args=None):
@@ -82,7 +81,6 @@ class AirOSDriver(NetworkDriver):
             # is unusable
             return {'is_alive': False}
 
-
     def _send_command(self, command):
         """Wrapper for self.device.send.command().
         If command is a list will iterate through commands until valid command.
@@ -135,6 +133,4 @@ class AirOSDriver(NetworkDriver):
             output = self._send_command(command)
             configs["running"] = output.strip()
 
-
         return configs
-
