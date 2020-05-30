@@ -1,2 +1,2 @@
-napalm
-netmiko
+napalm>=3.0.0
+netmiko>=3.0.0
