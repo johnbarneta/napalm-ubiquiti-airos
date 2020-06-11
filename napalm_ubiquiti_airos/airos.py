@@ -52,6 +52,8 @@ class AirOSDriver(NetworkDriver):
         # Build dict of any optional Netmiko args
         self._netmiko_optional_args.update(optional_args)
 
+        self.force_no_enable = True
+
     def open(self):
         """Open a connection to the device.
         """
